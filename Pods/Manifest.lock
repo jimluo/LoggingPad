@@ -1,0 +1,193 @@
+PODS:
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - FCFileManager (1.0.6)
+  - GRMustache (7.3.0):
+    - JRSwizzle (~> 1.0)
+  - JRSwizzle (1.0)
+  - SVGKit (2.x):
+    - CocoaLumberjack
+  - YOLOKit (11.1.1):
+    - YOLOKit/all (= 11.1.1)
+    - YOLOKit/any (= 11.1.1)
+    - YOLOKit/array (= 11.1.1)
+    - YOLOKit/base (= 11.1.1)
+    - YOLOKit/chunk (= 11.1.1)
+    - YOLOKit/concat (= 11.1.1)
+    - YOLOKit/dict (= 11.1.1)
+    - YOLOKit/each (= 11.1.1)
+    - YOLOKit/extend (= 11.1.1)
+    - YOLOKit/find (= 11.1.1)
+    - YOLOKit/first (= 11.1.1)
+    - YOLOKit/flatMap (= 11.1.1)
+    - YOLOKit/flatten (= 11.1.1)
+    - YOLOKit/fmap (= 11.1.1)
+    - YOLOKit/get (= 11.1.1)
+    - YOLOKit/groupBy (= 11.1.1)
+    - YOLOKit/has (= 11.1.1)
+    - YOLOKit/indexOf (= 11.1.1)
+    - YOLOKit/inject (= 11.1.1)
+    - YOLOKit/join (= 11.1.1)
+    - YOLOKit/last (= 11.1.1)
+    - YOLOKit/map (= 11.1.1)
+    - YOLOKit/max (= 11.1.1)
+    - YOLOKit/min (= 11.1.1)
+    - YOLOKit/none (= 11.1.1)
+    - YOLOKit/partition (= 11.1.1)
+    - YOLOKit/pick (= 11.1.1)
+    - YOLOKit/pluck (= 11.1.1)
+    - YOLOKit/pmap (= 11.1.1)
+    - YOLOKit/pop (= 11.1.1)
+    - YOLOKit/push (= 11.1.1)
+    - YOLOKit/reduce (= 11.1.1)
+    - YOLOKit/reverse (= 11.1.1)
+    - YOLOKit/rotate (= 11.1.1)
+    - YOLOKit/sample (= 11.1.1)
+    - YOLOKit/select (= 11.1.1)
+    - YOLOKit/shift (= 11.1.1)
+    - YOLOKit/shuffle (= 11.1.1)
+    - YOLOKit/skip (= 11.1.1)
+    - YOLOKit/slice (= 11.1.1)
+    - YOLOKit/snip (= 11.1.1)
+    - YOLOKit/sort (= 11.1.1)
+    - YOLOKit/split (= 11.1.1)
+    - YOLOKit/transpose (= 11.1.1)
+    - YOLOKit/uniq (= 11.1.1)
+    - YOLOKit/unshift (= 11.1.1)
+    - YOLOKit/upTo (= 11.1.1)
+    - YOLOKit/without (= 11.1.1)
+  - YOLOKit/all (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/any (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/array (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/base (11.1.1)
+  - YOLOKit/chunk (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/slice
+  - YOLOKit/concat (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/dict (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/transpose
+  - YOLOKit/each (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/extend (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/find (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/first (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/slice
+  - YOLOKit/flatMap (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/flatten (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/fmap (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/map
+  - YOLOKit/get (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/groupBy (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/has (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/indexOf (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/inject (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/join (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/pluck
+  - YOLOKit/last (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/slice
+  - YOLOKit/map (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/max (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/min (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/none (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/partition (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/pick (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/pluck (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/pmap (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/pop (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/push (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/reduce (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/last
+  - YOLOKit/reverse (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/rotate (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/concat
+    - YOLOKit/skip
+    - YOLOKit/snip
+  - YOLOKit/sample (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/select (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/shift (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/shuffle (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/skip (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/last
+  - YOLOKit/slice (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/snip (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/slice
+  - YOLOKit/sort (11.1.1):
+    - YOLOKit/all
+    - YOLOKit/base
+    - YOLOKit/transpose
+  - YOLOKit/split (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/transpose (11.1.1):
+    - YOLOKit/base
+    - YOLOKit/each
+    - YOLOKit/max
+    - YOLOKit/select
+  - YOLOKit/uniq (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/unshift (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/upTo (11.1.1):
+    - YOLOKit/base
+  - YOLOKit/without (11.1.1):
+    - YOLOKit/base
+
+DEPENDENCIES:
+  - FCFileManager
+  - GRMustache
+  - SVGKit (from `/Users/jimluo/repos/LoggingPad/Pods/Local Podspecs/SVGKit.podspec`)
+  - YOLOKit
+
+EXTERNAL SOURCES:
+  SVGKit:
+    :podspec: /Users/jimluo/repos/LoggingPad/Pods/Local Podspecs/SVGKit.podspec
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
+  FCFileManager: 30f8a44f324e479fae09bb30ba0c639eacd9f229
+  GRMustache: efecd3b603f0a7a99cf6bdf3998782ee0c465726
+  JRSwizzle: 30da7a2c539a4ebf954b16d15f6dd8221c9f6fa5
+  SVGKit: cdf24760828ed4f97aabe2a96a64e7dbd38da473
+  YOLOKit: ad6af7de2870692276ad0f44665d684e8b13791d
+
+COCOAPODS: 0.35.0

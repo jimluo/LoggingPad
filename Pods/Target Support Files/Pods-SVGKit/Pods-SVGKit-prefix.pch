@@ -1,0 +1,19 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#import "Pods-environment.h"
+//
+// Prefix header for all source files of the 'SVGKit-iOS' target in the 'SVGKit-iOS' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "DDLog.h"
+
+    #if DEBUG
+    static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+    #else
+    static const int ddLogLevel = LOG_LEVEL_WARN;
+    #endif
+#endif

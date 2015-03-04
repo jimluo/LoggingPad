@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+  width="{{width}}" height="{{heightLegend}}">
+  <title>{{title}}</title>
+
+  <g id="TrackFrame" stroke="black" stroke-width="2">
+  	<line x1="0" y1="2" x2="{{width}}" y2="2" /> 
+  	<line x1="0" y1="{{heightLegend}}" x2="{{width}}" y2="{{heightLegend}}" /> 
+  	<line x1="1" y1="1" x2="1" y2="{{heightLegend}}" /> 
+  	<line x1="{{width}}" y1="0" x2="{{width}}" y2="{{heightLegend}}" /> 
+  	<line x1="{{TrackDepthX}}" y1="0" x2="{{TrackDepthX}}" y2="{{heightLegend}}"/> 
+  	<line x1="{{Track2X}}" y1="0" x2="{{Track2X}}" y2="{{heightLegend}}" /> 
+  	<line x1="{{Track3X}}" y1="0" x2="{{Track3X}}" y2="{{heightLegend}}" /> 
+  </g>
+
+  <g id="legend" font-size="7pt" font-family="monospace" font-weight="normal" stroke-width="0.5">
+  {{#Curves}}
+  	<g stroke="{{CurveStroke}}">
+      <line x1="{{LineLeft}}" y1="{{LineY}}" x2="{{LineRight}}" y2="{{LineY}}" />
+      <text x="{{LineLeft}}" y="{{TextY}}" text-anchor="start">{{CurveMin}}</text>
+      <text x="{{TextXMid}}" y="{{TextY}}" text-anchor="middle">{{CurveName}}</text>
+      <text x="{{LineRight}}" y="{{TextY}}" text-anchor="end">{{CurveMax}}</text>  
+  	</g>
+  {{/Curves}}
+  </g>
+
+</svg>

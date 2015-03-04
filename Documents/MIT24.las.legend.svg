@@ -1,0 +1,99 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+  width="640" height="120">
+  <title>logging curves</title>
+
+  <g id="TrackFrame" stroke="black" stroke-width="2">
+  	<line x1="0" y1="2" x2="640" y2="2" /> 
+  	<line x1="0" y1="120" x2="640" y2="120" /> 
+  	<line x1="1" y1="1" x2="1" y2="120" /> 
+  	<line x1="640" y1="0" x2="640" y2="120" /> 
+  	<line x1="200" y1="0" x2="200" y2="120"/> 
+  	<line x1="240" y1="0" x2="240" y2="120" /> 
+  	<line x1="440" y1="0" x2="440" y2="120" /> 
+  </g>
+
+  <g id="legend" font-size="7pt" font-family="monospace" font-weight="normal" stroke-width="0.5">
+  
+  	<g stroke="blue">
+      <line x1="0" y1="35" x2="200" y2="35" />
+      <text x="0" y="30" text-anchor="start">-20</text>
+      <text x="100" y="30" text-anchor="middle">LSPD</text>
+      <text x="200" y="30" text-anchor="end">0</text>  
+  	</g>
+  
+  	<g stroke="black">
+      <line x1="0" y1="65" x2="200" y2="65" />
+      <text x="0" y="60" text-anchor="start">-1500</text>
+      <text x="100" y="60" text-anchor="middle">LTEN</text>
+      <text x="200" y="60" text-anchor="end">-1000</text>  
+  	</g>
+  
+  	<g stroke="brown">
+      <line x1="0" y1="95" x2="200" y2="95" />
+      <text x="0" y="90" text-anchor="start">10000</text>
+      <text x="100" y="90" text-anchor="middle">CCL</text>
+      <text x="200" y="90" text-anchor="end">30000</text>  
+  	</g>
+  
+  	<g stroke="green">
+      <line x1="0" y1="125" x2="200" y2="125" />
+      <text x="0" y="120" text-anchor="start">0</text>
+      <text x="100" y="120" text-anchor="middle">GR</text>
+      <text x="200" y="120" text-anchor="end">200</text>  
+  	</g>
+  
+  	<g stroke="red">
+      <line x1="0" y1="155" x2="200" y2="155" />
+      <text x="0" y="150" text-anchor="start">0</text>
+      <text x="100" y="150" text-anchor="middle">WTEMP</text>
+      <text x="200" y="150" text-anchor="end">50</text>  
+  	</g>
+  
+  	<g stroke="blue">
+      <line x1="240" y1="35" x2="440" y2="35" />
+      <text x="240" y="30" text-anchor="start">51</text>
+      <text x="340" y="30" text-anchor="middle">MNRD</text>
+      <text x="440" y="30" text-anchor="end">71</text>  
+  	</g>
+  
+  	<g stroke="green">
+      <line x1="240" y1="65" x2="440" y2="65" />
+      <text x="240" y="60" text-anchor="start">51</text>
+      <text x="340" y="60" text-anchor="middle">AVRD</text>
+      <text x="440" y="60" text-anchor="end">71</text>  
+  	</g>
+  
+  	<g stroke="red">
+      <line x1="240" y1="95" x2="440" y2="95" />
+      <text x="240" y="90" text-anchor="start">51</text>
+      <text x="340" y="90" text-anchor="middle">MXRD</text>
+      <text x="440" y="90" text-anchor="end">71</text>  
+  	</g>
+  
+  	<g stroke="brown">
+      <line x1="440" y1="35" x2="640" y2="35" />
+      <text x="440" y="30" text-anchor="start">3.1</text>
+      <text x="540" y="30" text-anchor="middle">R01</text>
+      <text x="640" y="30" text-anchor="end">4.1</text>  
+  	</g>
+  
+  	<g stroke="brown">
+      <line x1="440" y1="65" x2="640" y2="65" />
+      <text x="440" y="60" text-anchor="start">2.75</text>
+      <text x="540" y="60" text-anchor="middle">R11</text>
+      <text x="640" y="60" text-anchor="end">3.75</text>  
+  	</g>
+  
+  	<g stroke="brown">
+      <line x1="440" y1="95" x2="640" y2="95" />
+      <text x="440" y="90" text-anchor="start">2.4</text>
+      <text x="540" y="90" text-anchor="middle">R21</text>
+      <text x="640" y="90" text-anchor="end">3.4</text>  
+  	</g>
+  
+  </g>
+
+</svg>

@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+  width="{{width}}" height="{{height}}">
+  <title>{{title}}</title>
+
+  <defs>
+    <pattern id="Column" x="0" y="0" width="{{WidthTrackColumn}}" height="100" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="100" stroke="gray"/>
+    </pattern>
+
+    <pattern id="Row1M" x="0" y="0" width="{{WidthTrack}}" height="20" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="{{WidthTrack}}" y2="0" stroke="gray"/>
+    </pattern>
+
+    <pattern id="Row5M" x="0" y="0" width="{{WidthTrack}}" height="100" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="{{WidthTrack}}" y2="0" stroke="black"/>
+    </pattern>
+
+    <g id="Track" stroke="black">
+      <rect x="0" y="0" width="{{WidthTrack}}" height="{{height}}" fill="url(#Column)" />
+      <rect x="0" y="0" width="{{WidthTrack}}" height="{{height}}" fill="url(#Row1M)" />
+      <rect x="0" y="0" width="{{WidthTrack}}" height="{{height}}" fill="url(#Row5M)" />
+    </g>
+  </defs>
+
+  <g id="Tracks" y="0" stroke="black">    
+    <rect id="TrackDepth" x="{{TrackDepthX}}" width="{{TrackDepthWidth}}" height="{{height}}" fill="white"/>
+    <use id="Track1" xlink:href="#Track" x="{{Track1X}}" />
+    <use id="Track2" xlink:href="#Track" x="{{Track2X}}" />
+    <use id="Track3" xlink:href="#Track" x="{{Track3X}}" />
+  </g>
+
+  <g id="Curves" fill="none">
+  {{#Curves}}
+    <polyline id="{{CurveName}}" stroke="{{CurveStroke}}" points="{{CurvePoints}}" />
+  {{/Curves}}
+  	<text x="{{TrackDepthX}}" y="{{TextY}}" text-anchor="start">{{CurveMin}}</text>
+  </g>
+
+  <g id="DepthText" font-size="13pt" font-family="monospace" font-weight="normal">
+  {{#DepthText}}
+  	<text x="{{TrackDepthX}}" y="{{DepthText25MY}}" text-anchor="start">{{DepthText25M}}</text>
+  {{/DepthText}}
+  </g>
+
+</svg>

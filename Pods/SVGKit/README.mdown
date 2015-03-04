@@ -1,0 +1,87 @@
+# SVGKit
+
+SVGKit is a Cocoa framework for rendering SVG files natively: it's fast and powerful.
+
+## Versions:
+
+Latest info at: https://github.com/SVGKit/SVGKit/wiki/Versions
+
+  - v2.x = current "in development" branch with latest changes, fixes, features
+    - NB: this is now automatically selected in GitHub as the "default" branch when you visit SVGKit's project page
+
+
+# Apps that use SVGKit
+
+New for 2014 - we have a wiki page listing known apps that use SVGKit, and how they're using it:
+
+* https://github.com/SVGKit/SVGKit/wiki/Apps-using-SVGKit
+
+# Getting Started
+
+## Run the Demo
+
+1. Open up "Demo-iOS.xcodeproj", and run it (on simulator or device). Try different SVG's. Zoom, pan, and (with the Monkey only:) hit the "Animate" button. Tap the images to see bounding-boxes / hit dectection (might need you to hit the Debug button first)
+1. If you have ANY problems building the library and embedding it in your app, compare your build settings to the Demo-iOS build settings - if something's different, it's probably the problem.
+
+## Build the static library (automatic)
+
+We use this build script to automatically build ALL versions of the library at once, and ship them as a single file: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4/3647187#3647187
+
+It's all setup already, all you need to do is:
+
+1. Open "SVGKit-iOS.xcodeproj", and Build it (cmd-B)
+3. in left navbar, scroll to bottom, and open the "Products" section
+4. right click the library ("libSVGKitBLAHBLAH.a") and select "show in finder"
+5. GO UP ONE FOLDER
+6. select the "Debug-universal" (or Release-universal if you were building in Release mode) folder
+7. Drag/drop the .a file and the "usr" folder into your project (select the "Copy files" checkbox)
+8. In Build Settings, select "Other Linker Flags" and add "-ObjC"
+9. Edit your build settings and set "C/C++ Compiler Version" = "LLVM Compiler 2.0"
+10. Add ALL the frameworks and 3rd party libraries listed below (go to "Build Phases", and "Link Binary with Libraries"):
+  - CoreText
+  - CoreImage
+  - libxml2.dylib
+  - QuartzCore
+  - CoreGraphics
+  - UIKit
+
+
+Everything else is automatic.
+
+However, early versions of Xcode5 have a major bug, affecting all libraries:
+
+1. Xcode 5: Apple will create a hardlink to your local hard-disk, breaking your project for all your co-workers. This is a new bug added for Xcode5 :(
+2. Xcode5: in Build Settings, scroll down to the "Library Search Paths"
+3. Xcode5: double click it. If it has any absolute paths, chop off the start, and replace the start with ""$(SRCROOT)/"" (note the quotes inside are necessary - Apple's Xcode has another bug where it will fail to build if you have spaces in any of your folder names!)
+
+Instead of fixing the bug, in latest Xcode 5.0.2, Apple has simply made it allow two copies of every Search Path. Hmm.
+
+## Recipes for using the library
+
+Here are some posts on using SVGKit, with advice on which methods to use and why:
+
+  - GETTING STARTED, plus NEW FEATURES:  http://t-machine.org/index.php/2012/12/31/svgkit-2013-usage/
+  - QUICK RECIPES for common uses:  http://t-machine.org/index.php/2013/01/02/svgkit-2013-recipes/
+     - additiona: How to scale an SVG image on screen: http://t-machine.org/index.php/2013/04/14/svgkit-scaling-svg-images/
+  - CONTRIBUTING to the project, CORE ARCHITECTURE: http://t-machine.org/index.php/2012/12/31/svgkit-2013-development/
+ 
+  - (November 2013): New (experimental) feature - writing SVG's out to disk, preserving any changes you made programmatically: http://t-machine.org/index.php/2013/11/17/svgkit-programmatic-editing-of-svg-files-on-ios/
+
+
+### I get a crash with "unrecognized selector" ?
+
+If you get this error:
+
+"+[NSCharacterSet SVGWhitespaceCharacterSet]: unrecognized selector sent to class "
+
+... you're probably building the Static Library, but forgot to do the step below:
+
+"Edit your build settings and add "Other Linker Flags" = "-ObjC""
+
+
+## Usage - OS X
+
+We need someone to integrate the OS X fork into the main project - please help.
+
+The fork is over here: https://github.com/MaddTheSane/SVGKit/tree/master
+

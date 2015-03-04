@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+  width="{{width}}" height="{{height}}">
+  <title>{{title}}</title>
+
+  <g id="TrackColumn" stroke="gray" stroke-width="1">
+  {{#TrackColumn}}
+    <line x1="{{TrackColumnX}}" y1="0" x2="{{TrackColumnX}}" y2="{{height}}" /> 
+  {{/TrackColumn}}
+  </g>
+  <line stroke="black" stroke-width="3" x1="{{Track1X}}" y1="0" x2="{{Track1X}}" y2="{{height}}" /> 
+  <line stroke="black" stroke-width="2" x1="{{Track3X}}" y1="0" x2="{{Track3X}}" y2="{{height}}" /> 
+  <line stroke="black" stroke-width="3" x1="{{width}}" y1="0" x2="{{width}}" y2="{{height}}" /> 
+
+  <g id="TrackRow1M" stroke="gray" stroke-width="1">
+  {{#TrackRow1M}}
+    <line x1="0" y1="{{TrackRow1MY}}" x2="{{width}}" y2="{{TrackRow1MY}}" /> 
+  {{/TrackRow1M}}
+  </g>
+
+  <g id="TrackRow5M" stroke="black" stroke-width="1">
+  {{#TrackRow5M}}
+    <line x1="0" y1="{{TrackRow5MY}}" x2="{{width}}" y2="{{TrackRow5MY}}" /> 
+  {{/TrackRow5M}}
+  </g>
+
+  <g id="Tracks" y="0" stroke="black">    
+    <rect id="TrackDepth" x="{{TrackDepthX}}" width="{{TrackDepthWidth}}" height="{{height}}" fill="white"/>
+  </g>
+
+  <g id="Curves" fill="none">
+  {{#Curves}}
+    <polyline id="{{CurveName}}" stroke="{{CurveStroke}}" points="{{CurvePoints}}" />
+  {{/Curves}}
+  	<text x="{{TrackDepthX}}" y="{{TextY}}" text-anchor="start">{{CurveMin}}</text>
+  </g>
+
+  <g id="DepthText" font-size="13pt" font-weight="normal">
+  {{#DepthText}}
+  	<text x="{{TrackDepthX}}" y="{{DepthText25MY}}" text-anchor="start">{{DepthText25M}}</text>
+  {{/DepthText}}
+  </g>
+
+</svg>
