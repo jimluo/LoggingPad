@@ -8,8 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  convert las data to svg file, dependency GRMustache template library
+ */
 @interface GWLas2Svg : NSObject
 
+/**
+ *  static method to convert
+ *
+ *  @param lasName las filename
+ *
+ *  @return svg content string
+ */
 + (NSString*)convert:(NSString*)lasName;
 
 @end

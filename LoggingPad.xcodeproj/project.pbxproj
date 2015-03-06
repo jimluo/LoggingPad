@@ -11,7 +11,6 @@
 		E005EB821AA7B4B100B0273F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E005EB811AA7B4B100B0273F /* main.m */; };
 		E005EB8E1AA7B4B100B0273F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E005EB8C1AA7B4B100B0273F /* Main.storyboard */; };
 		E005EB901AA7B4B100B0273F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E005EB8F1AA7B4B100B0273F /* Images.xcassets */; };
-		E005EB9F1AA7B4B100B0273F /* loggingpadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E005EB9E1AA7B4B100B0273F /* loggingpadTests.m */; };
 		E005EBB51AA7B53E00B0273F /* GWAqusitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E005EBAA1AA7B53E00B0273F /* GWAqusitionController.m */; };
 		E005EBB61AA7B53E00B0273F /* GWCurvesController.m in Sources */ = {isa = PBXBuildFile; fileRef = E005EBAC1AA7B53E00B0273F /* GWCurvesController.m */; };
 		E005EBB71AA7B53E00B0273F /* GWDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = E005EBAE1AA7B53E00B0273F /* GWDataController.m */; };
@@ -29,6 +28,8 @@
 		E005EBD01AA7B64E00B0273F /* MIT24.las.svg in Resources */ = {isa = PBXBuildFile; fileRef = E005EBC91AA7B64E00B0273F /* MIT24.las.svg */; };
 		E005EBD11AA7B64E00B0273F /* MIT24.las.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = E005EBCA1AA7B64E00B0273F /* MIT24.las.svg.png */; };
 		E005EBD51AA7B8C500B0273F /* GWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E005EBD41AA7B8C500B0273F /* GWAppDelegate.m */; };
+		E0954EBA1AAA1F8A00A988F7 /* GWDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0954EB91AAA1F8A00A988F7 /* GWDataTests.m */; };
+		E0954EBC1AAA523700A988F7 /* GWLas2SvgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0954EBB1AAA523700A988F7 /* GWLas2SvgTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0543F290A50DF81525571F35 /* Pods-loggingpadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loggingpadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-loggingpadTests/Pods-loggingpadTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F796408D41127814A529E27 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5CD0969AC63A961D6ADF14AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1239789FF1C8FE4807B5557 /* libPods-loggingpadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-loggingpadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF203F8BE23B47D71F66D5C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E005EB7C1AA7B4B100B0273F /* loggingpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loggingpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E005EB801AA7B4B100B0273F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		E005EB8F1AA7B4B100B0273F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = loggingpad/Images.xcassets; sourceTree = "<group>"; };
 		E005EB981AA7B4B100B0273F /* loggingpadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loggingpadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E005EB9D1AA7B4B100B0273F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E005EB9E1AA7B4B100B0273F /* loggingpadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loggingpadTests.m; sourceTree = "<group>"; };
 		E005EBA91AA7B53E00B0273F /* GWAqusitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWAqusitionController.h; sourceTree = "<group>"; };
 		E005EBAA1AA7B53E00B0273F /* GWAqusitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWAqusitionController.m; sourceTree = "<group>"; };
 		E005EBAB1AA7B53E00B0273F /* GWCurvesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCurvesController.h; sourceTree = "<group>"; };
@@ -79,6 +81,12 @@
 		E005EBCA1AA7B64E00B0273F /* MIT24.las.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MIT24.las.svg.png; path = Documents/MIT24.las.svg.png; sourceTree = "<group>"; };
 		E005EBD31AA7B8BE00B0273F /* GWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWAppDelegate.h; path = ../LoggingPad/GWAppDelegate.h; sourceTree = "<group>"; };
 		E005EBD41AA7B8C500B0273F /* GWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWAppDelegate.m; path = ../LoggingPad/GWAppDelegate.m; sourceTree = "<group>"; };
+		E0340EF389379F341FD4781F /* Pods-loggingpadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loggingpadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-loggingpadTests/Pods-loggingpadTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0954EB91AAA1F8A00A988F7 /* GWDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWDataTests.m; path = ../LoggingPadTests/GWDataTests.m; sourceTree = "<group>"; };
+		E0954EBB1AAA523700A988F7 /* GWLas2SvgTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWLas2SvgTests.m; path = LoggingPadTests/GWLas2SvgTests.m; sourceTree = SOURCE_ROOT; };
+		E0954EBD1AAA5ABE00A988F7 /* libPods-OCHamcrest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-OCHamcrest.a"; path = "Pods/build/Debug-iphoneos/libPods-OCHamcrest.a"; sourceTree = "<group>"; };
+		E0954EBE1AAA5ABE00A988F7 /* libPods-OCMockito.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-OCMockito.a"; path = "Pods/build/Debug-iphoneos/libPods-OCMockito.a"; sourceTree = "<group>"; };
+		E0954EBF1AAA5ABE00A988F7 /* libPods-YOLOKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-YOLOKit.a"; path = "Pods/build/Debug-iphoneos/libPods-YOLOKit.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,8 @@
 			children = (
 				4F796408D41127814A529E27 /* Pods.debug.xcconfig */,
 				BDF203F8BE23B47D71F66D5C /* Pods.release.xcconfig */,
+				0543F290A50DF81525571F35 /* Pods-loggingpadTests.debug.xcconfig */,
+				E0340EF389379F341FD4781F /* Pods-loggingpadTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -112,7 +122,11 @@
 		CE47BB72F12C72CFB0F9E070 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0954EBD1AAA5ABE00A988F7 /* libPods-OCHamcrest.a */,
+				E0954EBE1AAA5ABE00A988F7 /* libPods-OCMockito.a */,
+				E0954EBF1AAA5ABE00A988F7 /* libPods-YOLOKit.a */,
 				5CD0969AC63A961D6ADF14AD /* libPods.a */,
+				B1239789FF1C8FE4807B5557 /* libPods-loggingpadTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,7 +169,8 @@
 		E005EB9B1AA7B4B100B0273F /* loggingpadTests */ = {
 			isa = PBXGroup;
 			children = (
-				E005EB9E1AA7B4B100B0273F /* loggingpadTests.m */,
+				E0954EBB1AAA523700A988F7 /* GWLas2SvgTests.m */,
+				E0954EB91AAA1F8A00A988F7 /* GWDataTests.m */,
 				E005EB9C1AA7B4B100B0273F /* Supporting Files */,
 			);
 			path = loggingpadTests;
@@ -244,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E005EBA51AA7B4B100B0273F /* Build configuration list for PBXNativeTarget "loggingpadTests" */;
 			buildPhases = (
+				4E4834D3D6ECD55B21486ABA /* Check Pods Manifest.lock */,
 				E005EB941AA7B4B100B0273F /* Sources */,
 				E005EB951AA7B4B100B0273F /* Frameworks */,
 				E005EB961AA7B4B100B0273F /* Resources */,
+				F91A3B19C616F4B19D7666B0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +355,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4E4834D3D6ECD55B21486ABA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		60D8FE43619AB8FF706F5FB6 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +383,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F91A3B19C616F4B19D7666B0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-loggingpadTests/Pods-loggingpadTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -378,7 +425,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E005EB9F1AA7B4B100B0273F /* loggingpadTests.m in Sources */,
+				E0954EBC1AAA523700A988F7 /* GWLas2SvgTests.m in Sources */,
+				E0954EBA1AAA1F8A00A988F7 /* GWDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +557,7 @@
 		};
 		E005EBA61AA7B4B100B0273F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F796408D41127814A529E27 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -521,6 +570,10 @@
 				);
 				INFOPLIST_FILE = loggingpadTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loggingpad.app/loggingpad";
 			};
@@ -528,6 +581,7 @@
 		};
 		E005EBA71AA7B4B100B0273F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0340EF389379F341FD4781F /* Pods-loggingpadTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -536,6 +590,10 @@
 				);
 				INFOPLIST_FILE = loggingpadTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loggingpad.app/loggingpad";
 			};

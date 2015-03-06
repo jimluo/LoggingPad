@@ -17,8 +17,20 @@
 @interface GWDataController () <UISearchBarDelegate>
 
 @property (strong, nonatomic) IBOutlet UISearchBar* searchBar;
+
+/**
+ *  data name show in cell by user search, no search will show all data cell
+ */
 @property (strong, nonatomic) NSMutableArray* dataNamesBySearch;
+
+/**
+ *  cell image that create by Preview svg screen shotscreen
+ */
 @property (strong, nonatomic) NSMutableDictionary* dataThumbnail;
+
+/**
+ *  plist cache all data details for cell detail
+ */
 @property (strong, nonatomic) NSMutableDictionary* dataDetails;
 
 @end
@@ -29,7 +41,7 @@
 {
     [super viewDidLoad];
 
-    self.tableView.contentOffset = CGPointMake(0, 44);
+    self.tableView.contentOffset = CGPointMake(0, 44); // for search bar height
 
     NSString* plistPath = [FCFileManager pathForPlistNamed:@"dataDetails"];
     self.dataDetails = [[NSDictionary dictionaryWithContentsOfFile:plistPath] mutableCopy];
@@ -82,7 +94,7 @@
 
         if ([FCFileManager existsItemAtPath:svgPath]) {
             NSString* details = self.dataDetails[name];
-            NSString* curvenames = details.split(@"+")[1];//detail+curvenames
+            NSString* curvenames = details.split(@"+")[1]; //detail+curvenames
             NSArray* curves = curvenames.split(@",");
             [[segue destinationViewController] showSvg:svgPath legend:svgLegendPath thumbnail:thumbnailPath curves:curves];
         }

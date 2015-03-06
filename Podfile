@@ -6,3 +6,7 @@ pod "SVGKit", :podspec => '/Users/jimluo/repos/LoggingPad/Pods/Local Podspecs/SV
 pod "YOLOKit"
 pod "GRMustache"
 pod "FCFileManager"
+target :loggingpadTests, :exclusive => true do
+    pod 'OCMockito'
+end
+#link_with 'LoggingPad', 'loggingpadTests'

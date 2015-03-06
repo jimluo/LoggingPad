@@ -16,12 +16,40 @@
 @interface GWPreviewController () <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView* scrollView;
+
+/**
+ *  cached image for show by SVGKit
+ */
 @property (strong, nonatomic) SVGKImage* svgImage;
+
+/**
+ *  cached legend image for Legend VC to show
+ */
 @property (strong, nonatomic) UIImage* svgLegendImage;
+
+/**
+ *  cahced curvename for Curves VC to show
+ */
 @property (strong, nonatomic) NSArray* curvenames;
+
+/**
+ *  show textedit for input
+ */
 @property (strong, nonatomic) CALayer* panLayerTextStatck;
+
+/**
+ *  show user select curve
+ */
 @property (strong, nonatomic) CAShapeLayer* tapLayerCurveSelect;
+
+/**
+ *  cached have input text for show
+ */
 @property (strong, nonatomic) CATextLayer* textLayers;
+
+/**
+ *  cached have selelcted curves to show
+ */
 @property (strong, nonatomic) NSMutableDictionary* curveLayers;
 @property (strong, nonatomic) UITableViewController* lastPopoverTableView;
 
@@ -66,7 +94,6 @@
 
     self.curveLayers = [[NSMutableDictionary alloc] init];
 
-    //    self.svgImage.size = self.scrollView.bounds.size;
     SVGKFastImageView* svgImageView = [[SVGKFastImageView alloc] initWithSVGKImage:self.svgImage];
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
@@ -91,7 +118,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
 {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
+    //    NSLog(@"%s", __PRETTY_FUNCTION__);
     NSString* idSegue = [segue identifier];
     if ([idSegue isEqualToString:@"CurvesSegue"]) {
         GWCurvesController* curves = segue.destinationViewController;
@@ -139,12 +166,8 @@
     else if (sender.state == UIGestureRecognizerStateEnded) {
         [self.panLayerTextStatck removeFromSuperlayer];
 
-        //        CGPoint contentOffset = CGPointMake(self.scrollView.contentOffset.x, self.panLayer.position.y);
-        //        [self.scrollView setContentOffset:contentOffset animated:YES];
-
         UITextField* textInput = [[UITextField alloc] initWithFrame:self.panLayerTextStatck.frame];
         textInput.delegate = self;
-        //        [textInput addTarget:self action:@selesdctor(didEndOnExitTextInput:) forControlEvents:UIControlEventEditingChanged];
         textInput.backgroundColor = [UIColor lightGrayColor];
         textInput.textColor = [UIColor blackColor];
         textInput.font = [UIFont fontWithName:@"Arial-BoldMT" size:12.0];
@@ -174,9 +197,7 @@
         if (self.tapLayerCurveSelect != nil) {
 
             self.tapLayerCurveSelect.lineWidth = 2;
-            //            self.tapLayer.fillColor = [UIColor redColor].CGColor;;
             [self.view.layer addSublayer:self.tapLayerCurveSelect];
-            //            [self.view needsDisplay];
         }
     }
 }

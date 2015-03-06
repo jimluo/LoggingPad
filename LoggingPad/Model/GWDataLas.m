@@ -30,18 +30,26 @@
         NSString* name = self.curves[i];
         curveData[name] = [NSArray arrayWithArray:dataArray[i]];
     }
-    
+
     NSDictionary* well = [self well];
     self.details = [NSString stringWithFormat:@"Depth:%@~%@ Well:%@ Date:%@", well[@"STRT"], well[@"STOP"], well[@"WELL"], well[@"Date"]];
     [self.details stringByAppendingFormat:@"+%@", self.curves.join(@",")];
-    
+
     return TRUE;
 }
 
+/**
+ *  parse each text line, include sections: well/curve/Ascii data
+ *
+ *  @param linesOfText text lines
+ *
+ *  @return data array
+ */
 - (NSMutableArray*)parseData:(NSArray*)linesOfText
 {
     NSString* sectionID = @"";
     NSMutableArray* dataArray = [[NSMutableArray alloc] init];
+    NSSet* depthInWell = [NSSet setWithArray:@[ @"STRT", @"STOP", @"STEP" ]];
 
     for (NSString* line in linesOfText) {
         if (![line hasPrefix:@"#"]) {
@@ -52,7 +60,13 @@
                 NSString* nameUnitValue = [[line componentsSeparatedByString:@":"] firstObject];
                 NSString* nameUnit = [[nameUnitValue componentsSeparatedByString:@" "] firstObject];
                 NSString* name = [[nameUnitValue componentsSeparatedByString:@"."] firstObject];
-                self.well[name] = [nameUnitValue substringFromIndex:[nameUnit length]];
+                NSString* value = [[nameUnitValue substringFromIndex:[nameUnit length]] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+                if ([depthInWell containsObject:name]) {
+                    self.well[name] = [NSNumber numberWithFloat:[value floatValue]];
+                }
+                else {
+                    self.well[name] = value;
+                }
             }
             else if ([sectionID isEqualToString:@"~C"]) { //section curve
                 [self.curves addObject:[[line componentsSeparatedByString:@"."] firstObject]];
